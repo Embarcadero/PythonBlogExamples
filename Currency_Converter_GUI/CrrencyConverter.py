@@ -54,10 +54,34 @@ class CurrencyConvert(Form):
                               Width = 100, OnClick = self.__button_click_convert)
 
     def __load_country_codes(self):
-        pass
+        url = "https://api.apilayer.com/currency_data/list"
+
+        headers= {
+        "apikey": "*****************************" ### Enter your Currency Data API's registered Unique API key in this string ###
+        }
+
+        response = requests.request("GET", url, headers=headers) #API GET request
+
+        result = response.json() #Reading json response
+        codes = list(result['currencies'].keys())
+        for code in codes:
+            self.comboC1.Items.append(code)
+            self.comboC2.Items.append(code)
 
     def __button_click_convert(self, sender): #Method called when convert button clicked
-        pass
+        given = self.comboC1.Selected.Text
+        to = self.comboC2.Selected.Text
+        amountGiven = int(self.editA1.Text)
+        url = "https://api.apilayer.com/currency_data/convert?to={}&from={}&amount={}".format(to, given, amountGiven)
+
+        headers= {
+        "apikey": "*******************************" ### Enter your Currency Data API's registered Unique API key in this string ###
+        }
+
+        response = requests.request("GET", url, headers=headers) #API GET request
+
+        result = response.json() #Reading json response
+        self.A2Value.Text = str(result["result"]) #Displaying the response
 
 def main():
     Application.Initialize()
