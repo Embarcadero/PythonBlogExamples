@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/02/01 13:09:38.000.509,=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/02/01 13:10:49.000.345,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Login_Registration_App.dproj=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Project3.dproj</Transaction>
+    <Transaction>2023/02/01 13:10:56.000.948,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Register.fmx=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit2.fmx</Transaction>
+    <Transaction>2023/02/01 13:10:56.000.948,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Register.pas=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2023/02/01 13:11:14.000.845,=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2023/02/01 13:11:23.000.240,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Login.pas=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2023/02/01 13:11:23.000.240,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Login.fmx=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit3.fmx</Transaction>
+    <Transaction>2023/02/01 13:20:49.000.231,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\SignIn.fmx=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Login.fmx</Transaction>
+    <Transaction>2023/02/01 13:20:49.000.231,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\SignIn.pas=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Login.pas</Transaction>
+    <Transaction>2023/02/01 13:20:55.000.868,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\SignUp.pas=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Register.pas</Transaction>
+    <Transaction>2023/02/01 13:20:55.000.868,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\SignUp.fmx=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Register.fmx</Transaction>
+    <Transaction>2023/02/01 13:24:05.000.194,=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2023/02/01 13:24:11.000.153,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\SignIn.pas=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2023/02/01 13:24:11.000.153,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\SignIn.fmx=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit3.fmx</Transaction>
+    <Transaction>2023/02/01 13:48:22.000.031,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Login_Registration_App.dproj=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Login_Registration_App.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
