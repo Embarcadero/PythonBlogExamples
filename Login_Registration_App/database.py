@@ -18,20 +18,3 @@ users = Table(
 )
 
 meta.create_all(engine)
-
-# # insert records into the table
-# dummy1 = users.insert().values(email='zain10@gmail.com', fname='Zain', lname='Khan', password='123xyz')
-
-# # execute the insert record statement
-# engine.execute(dummy1)
-  
-# # write the SQL query inside the text() block
-# sql = text('SELECT * from users')
-# # results = engine.execute(sql)
-  
-# # Fetch all the records
-# result = engine.execute(sql).fetchall()
-    
-# # View the records
-# for record in result:
-#     print("\n", record)
