@@ -1,1 +1,183 @@
-
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = '['
+  ClientHeight = 480
+  ClientWidth = 336
+  Fill.Color = xFFF2E6F8
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Title: TLabel
+    StyledSettings = [Family, FontColor]
+    Size.Width = 335.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'listboxheaderlabel'
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Tic Tac Toe'
+    TabOrder = 0
+  end
+  object Status: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.Y = 440.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Player 1 move (X)'
+    TabOrder = 1
+  end
+  object Line1: TLine
+    LineType = Diagonal
+    Position.Y = 168.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Line2: TLine
+    LineType = Diagonal
+    Position.X = -2.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 339.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Line3: TLine
+    LineType = Diagonal
+    Position.X = 104.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 1.000000000000000000
+    Size.Height = 329.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Z: TLine
+    LineType = Diagonal
+    Position.X = 232.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 1.000000000000000000
+    Size.Height = 329.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Pos1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 64.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 14
+    OnClick = Pos1Click
+  end
+  object Pos2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 13
+    OnClick = Pos2Click
+  end
+  object Pos3: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 12
+    OnClick = Pos3Click
+  end
+  object Pos5: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 11
+    OnClick = Pos5Click
+  end
+  object Pos4: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 168.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 10
+    OnClick = Pos4Click
+  end
+  object Pos6: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 9
+    OnClick = Pos6Click
+  end
+  object Pos7: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 280.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 8
+    OnClick = Pos7Click
+  end
+  object Pos8: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 7
+    OnClick = Pos8Click
+  end
+  object Pos9: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 232.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 48.000000000000000000
+    TextSettings.HorzAlign = Center
+    TabOrder = 6
+    OnClick = Pos9Click
+  end
+  object Button1: TButton
+    Position.X = 256.000000000000000000
+    Position.Y = 408.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+end
