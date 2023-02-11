@@ -1,0 +1,96 @@
+object CurrencyConverterApp: TCurrencyConverterApp
+  Left = 0
+  Top = 0
+  Caption = 'Currency Converter'
+  ClientHeight = 480
+  ClientWidth = 306
+  Fill.Color = xFFB0D1D3
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object FromAmount: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 176.000000000000000000
+    Position.Y = 168.000000000000000000
+  end
+  object Currency1: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = 'Currency'
+    TabOrder = 8
+  end
+  object Amount1: TLabel
+    Position.X = 176.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = 'Amount'
+    TabOrder = 5
+  end
+  object Currency2: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 280.000000000000000000
+    Text = 'Currency'
+    TabOrder = 3
+  end
+  object Amount2: TLabel
+    Position.X = 176.000000000000000000
+    Position.Y = 280.000000000000000000
+    Text = 'Amount'
+    TabOrder = 2
+  end
+  object Title: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 72.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Currency Converter'
+    TabOrder = 4
+  end
+  object FromLabel: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 105.000000000000000000
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'From'
+    TabOrder = 7
+  end
+  object ToLabel: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 248.000000000000000000
+    TextSettings.Font.Size = 16.000000000000000000
+    Text = 'To'
+    TabOrder = 6
+  end
+  object Convert: TButton
+    Position.X = 192.000000000000000000
+    Position.Y = 384.000000000000000000
+    TabOrder = 9
+    Text = 'Convert'
+    OnClick = ConvertClick
+  end
+  object FromCurrency: TComboBox
+    Position.X = 40.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 12
+  end
+  object ToCurrency: TComboBox
+    Position.X = 40.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 11
+  end
+  object ToAmount: TLabel
+    Position.X = 176.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '-'
+    TabOrder = 1
+  end
+end

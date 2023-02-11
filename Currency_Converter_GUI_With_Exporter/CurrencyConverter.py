@@ -31,6 +31,7 @@ class CurrencyConverterApp(Form):
         self.ToAmount = None
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "CurrencyConverter.pyfmx"))
 
+        # Load the currencies in key values of the self.data dictionary into the FromCurrency and ToCurrency combo boxes
         for key in self.data.keys():
             self.FromCurrency.Items.append(key)
             self.ToCurrency.Items.append(key)
