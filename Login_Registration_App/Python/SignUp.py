@@ -21,18 +21,18 @@ class Form2(Form):
         self.CPasswordText = None
         self.CPassword = None
         self.Signup = None
-        self.Error = None
+        self.Status = None
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "SignUp.pyfmx"))
 
     def SignupClick(self, Sender):
         if self.FnameText.Text == "" or self.LNameText.Text == "" or self.EmailText.Text == "" or self.PasswordText.Text == "" or self.CPasswordText.Text == "":
-            self.Error.Text = "Incomplete details!"
+            self.Status.Text = "Incomplete details!"
         elif self.CPasswordText.Text != self.PasswordText.Text:
-            self.Error.Text = "Passwords do not match!"
+            self.Status.Text = "Passwords do not match!"
         else:            
             query = "INSERT INTO users VALUES ('{}', '{}','{}', '{}')".format(self.EmailText.Text, self.FnameText.Text, self.LNameText.Text, self.PasswordText.Text)
 
             # execute the insert record statement
             engine.execute(query)
 
-            self.Error.Text = "Successful SignUp"
+            self.Status.Text = "Successful SignUp"

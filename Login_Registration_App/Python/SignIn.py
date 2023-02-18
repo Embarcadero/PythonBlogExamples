@@ -16,23 +16,23 @@ class Form3(Form):
         self.Password = None
         self.Signin = None
         self.EmailText = None
-        self.Error = None
+        self.Status = None
         self.Signup = None
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "SignIn.pyfmx"))
         
     def SigninClick(self, Sender):
         if self.EmailText.Text == "" or self.PasswordText.Text == "":
-            self.Error.Text = "Incomplete details"
+            self.Status.Text = "Incomplete details"
         else:
             # write the SQL query inside the text() block
             sql = text("SELECT * FROM users WHERE users.email='{}' AND users.password='{}'".format(self.EmailText.Text, self.PasswordText.Text))
             result = engine.execute(sql).fetchall()
             print(result)
             if len(result) == 0:
-                self.Error.Text = "Incorrect or invalid login details"
+                self.Status.Text = "Incorrect or invalid login details"
             else:
                 Fname = result[0][1]
-                self.Error.Text = "Successful login. Welcome {}".format(Fname)
+                self.Status.Text = "Successful login. Welcome {}".format(Fname)
 
     def SignupClick(self, Sender):
         Application.MainForm = Form2(Application)

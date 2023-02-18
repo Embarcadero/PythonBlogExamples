@@ -133,7 +133,7 @@ object Form2: TForm2
     TextSettings.Font.Family = 'Rockwell'
     OnClick = SignupClick
   end
-  object Error: TLabel
+  object Status: TLabel
     StyledSettings = [Size, Style]
     Position.Y = 320.000000000000000000
     Size.Width = 305.000000000000000000
