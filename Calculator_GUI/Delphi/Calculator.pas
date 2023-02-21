@@ -8,7 +8,7 @@ uses
   FMX.Controls.Presentation;
 
 type
-  TForm2 = class(TForm)
+  TCalculatorGUI = class(TForm)
     Del: TButton;
     C: TButton;
     Percent: TButton;
@@ -57,105 +57,105 @@ type
   end;
 
 var
-  Form2: TForm2;
+  CalculatorGUI: TCalculatorGUI;
 
 implementation
 
 {$R *.fmx}
 
-procedure TForm2.DelClick(Sender: TObject);
+procedure TCalculatorGUI.DelClick(Sender: TObject);
 begin
      //
-end;procedure TForm2.ResultsClick(Sender: TObject);
-begin
-     //
-end;
-procedure TForm2.CClick(Sender: TObject);
+end;procedure TCalculatorGUI.ResultsClick(Sender: TObject);
 begin
      //
 end;
-
-procedure TForm2.DivideClick(Sender: TObject);
+procedure TCalculatorGUI.CClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.DotClick(Sender: TObject);
+procedure TCalculatorGUI.DivideClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.EightClick(Sender: TObject);
+procedure TCalculatorGUI.DotClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.EqualsClick(Sender: TObject);
+procedure TCalculatorGUI.EightClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.FiveClick(Sender: TObject);
+procedure TCalculatorGUI.EqualsClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.FourClick(Sender: TObject);
+procedure TCalculatorGUI.FiveClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.MinusClick(Sender: TObject);
+procedure TCalculatorGUI.FourClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.MultiplyClick(Sender: TObject);
+procedure TCalculatorGUI.MinusClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.NineClick(Sender: TObject);
+procedure TCalculatorGUI.MultiplyClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.OneClick(Sender: TObject);
+procedure TCalculatorGUI.NineClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.PercentClick(Sender: TObject);
+procedure TCalculatorGUI.OneClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.PlusClick(Sender: TObject);
+procedure TCalculatorGUI.PercentClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.SevenClick(Sender: TObject);
+procedure TCalculatorGUI.PlusClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.SixClick(Sender: TObject);
+procedure TCalculatorGUI.SevenClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.ThreeClick(Sender: TObject);
+procedure TCalculatorGUI.SixClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.TwoClick(Sender: TObject);
+procedure TCalculatorGUI.ThreeClick(Sender: TObject);
 begin
      //
 end;
 
-procedure TForm2.ZeroClick(Sender: TObject);
+procedure TCalculatorGUI.TwoClick(Sender: TObject);
+begin
+     //
+end;
+
+procedure TCalculatorGUI.ZeroClick(Sender: TObject);
 begin
      //
 end;

@@ -1,7 +1,7 @@
-object Form2: TForm2
+object CalculatorGUI: TCalculatorGUI
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Calculator Application'
   ClientHeight = 480
   ClientWidth = 356
   Fill.Color = xFFD8E0F4
