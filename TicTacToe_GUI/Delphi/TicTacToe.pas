@@ -8,7 +8,7 @@ uses
   FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
 
 type
-  TForm2 = class(TForm)
+  TTicTacToeGUI = class(TForm)
     Title: TLabel;
     Status: TLabel;
     Line1: TLine;
@@ -25,8 +25,6 @@ type
     Pos8: TButton;
     Pos9: TButton;
     Reset: TButton;
-    procedure FormCreate(Sender: TObject);
-    procedure Line4Click(Sender: TObject);
     procedure Pos1Click(Sender: TObject);
     procedure Pos2Click(Sender: TObject);
     procedure Pos3Click(Sender: TObject);
@@ -44,68 +42,58 @@ type
   end;
 
 var
-  Form2: TForm2;
+  TicTacToeGUI: TTicTacToeGUI;
 
 implementation
 
 {$R *.fmx}
 
-procedure TForm2.FormCreate(Sender: TObject);
+procedure TTicTacToeGUI.Pos1Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Line4Click(Sender: TObject);
+procedure TTicTacToeGUI.Pos2Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Pos1Click(Sender: TObject);
+procedure TTicTacToeGUI.Pos3Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Pos2Click(Sender: TObject);
+procedure TTicTacToeGUI.Pos4Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Pos3Click(Sender: TObject);
+procedure TTicTacToeGUI.Pos5Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Pos4Click(Sender: TObject);
+procedure TTicTacToeGUI.Pos6Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Pos5Click(Sender: TObject);
+procedure TTicTacToeGUI.Pos7Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Pos6Click(Sender: TObject);
+procedure TTicTacToeGUI.Pos8Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Pos7Click(Sender: TObject);
+procedure TTicTacToeGUI.Pos9Click(Sender: TObject);
 begin
     //
 end;
 
-procedure TForm2.Pos8Click(Sender: TObject);
-begin
-    //
-end;
-
-procedure TForm2.Pos9Click(Sender: TObject);
-begin
-    //
-end;
-
-procedure TForm2.ResetClick(Sender: TObject);
+procedure TTicTacToeGUI.ResetClick(Sender: TObject);
 begin
   //
 end;

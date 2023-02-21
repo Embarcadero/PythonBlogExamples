@@ -106,7 +106,7 @@ class Form2(Form):
         else:
             self.make_move(self.p2, 2, 2, self.Pos9)
 
-        
+
 
     def has_winner(self):
         winner = None
@@ -114,7 +114,7 @@ class Form2(Form):
             # Check row combos
             if self.board[i][0] != "" and self.board[i][0] == self.board[i][1] and self.board[i][1] == self.board[i][2]:
                 winner = self.board[i][0]
-                
+
             # Check column combos
             elif self.board[0][i] != "" and self.board[0][i] == self.board[1][i] and self.board[1][i] == self.board[2][i]:
                 winner = self.board[0][i]

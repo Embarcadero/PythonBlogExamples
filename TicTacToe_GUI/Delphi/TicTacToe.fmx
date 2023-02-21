@@ -1,7 +1,7 @@
-object Form2: TForm2
+object TicTacToeGUI: TTicTacToeGUI
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Tic Tac Toe Game'
   ClientHeight = 480
   ClientWidth = 360
   Fill.Color = claThistle
@@ -9,7 +9,6 @@ object Form2: TForm2
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
   DesignerMasterStyle = 3
   object Title: TLabel
     StyledSettings = [Family, FontColor]
@@ -65,7 +64,6 @@ object Form2: TForm2
     Size.Width = 1.000000000000000000
     Size.Height = 321.000000000000000000
     Size.PlatformDefault = False
-    OnClick = Line4Click
   end
   object Pos1: TButton
     StyledSettings = [Family, Style, FontColor, Other]
