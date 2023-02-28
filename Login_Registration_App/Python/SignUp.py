@@ -4,9 +4,8 @@ from sqlalchemy import create_engine
 
 # establish connections - create new file db and connect of connect if it already exists
 engine = create_engine(
-	'sqlite:///users.db')
-
-class Form2(Form):
+    'sqlite:///users.db')
+class SignUpForm(Form):
 
     def __init__(self, owner):
         self.Register = None

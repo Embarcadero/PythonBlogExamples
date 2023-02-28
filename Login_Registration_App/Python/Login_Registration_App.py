@@ -1,10 +1,10 @@
 from delphifmx import *
-from SignIn import Form3
+from SignIn import SignInForm
 
 def main():
     Application.Initialize()
     Application.Title = 'Login_Registration_App'
-    Application.MainForm = Form3(Application)
+    Application.MainForm = SignInForm(Application)
     Application.MainForm.Show()
     Application.Run()
     Application.MainForm.Destroy()

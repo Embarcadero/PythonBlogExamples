@@ -1,6 +1,7 @@
-object Form2: TForm2
+object SignUpForm: TSignUpForm
   Left = 0
   Top = 0
+  Caption = 'SignUp'
   ClientHeight = 480
   ClientWidth = 306
   Fill.Color = xFFEEF6DF

@@ -1,13 +1,12 @@
 import os
 from delphifmx import *
-from SignUp import Form2
+from SignUp import SignUpForm
 from sqlalchemy import create_engine, text
 
 # establish connections - create new file db and connect of connect if it already exists
 engine = create_engine(
-	'sqlite:///users.db')
-
-class Form3(Form):
+    'sqlite:///users.db')
+class SignInForm(Form):
 
     def __init__(self, owner):
         self.Login = None
@@ -19,7 +18,7 @@ class Form3(Form):
         self.Status = None
         self.Signup = None
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "SignIn.pyfmx"))
-        
+
     def SigninClick(self, Sender):
         if self.EmailText.Text == "" or self.PasswordText.Text == "":
             self.Status.Text = "Incomplete details"
@@ -35,6 +34,6 @@ class Form3(Form):
                 self.Status.Text = "Successful login. Welcome {}".format(Fname)
 
     def SignupClick(self, Sender):
-        Application.MainForm = Form2(Application)
+        Application.MainForm = SignUpForm(Application)
         Application.MainForm.Show()
-        Application.MainForm = Form3(Application)
+        Application.MainForm = SignInForm(Application)
