@@ -1,8 +1,8 @@
 from delphifmx import *
-from Calculator import Form2
+from Calculator import CalculatorGUI
 
 def main():
-    Application.MainForm = Form2(Application)
+    Application.MainForm = CalculatorGUI(Application)
     Application.MainForm.Show()
 
 if __name__ == '__main__':

@@ -1,8 +1,7 @@
 import os
 from delphifmx import *
 
-class Form2(Form):
-
+class CalculatorGUI(Form):
     def __init__(self, owner):
         self.Del = None
         self.C = None

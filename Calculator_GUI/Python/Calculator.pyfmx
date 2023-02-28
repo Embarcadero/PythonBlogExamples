@@ -1,7 +1,7 @@
-object Form2: TForm2
+object CalculatorGUI: TCalculatorGUI
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Calculator Application'
   ClientHeight = 480
   ClientWidth = 356
   Fill.Color = xFFD8E0F4
@@ -18,7 +18,7 @@ object Form2: TForm2
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     StyleLookup = 'DelStyle1'
-    TabOrder = 18
+    TabOrder = 19
     Text = 'Del'
     TextSettings.Font.Size = 20.000000000000000000
     OnClick = DelClick
@@ -249,8 +249,7 @@ object Form2: TForm2
     Size.PlatformDefault = False
     TextSettings.Font.Size = 28.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
-    Text = 'Label1'
-    TabOrder = 21
+    TabOrder = 20
   end
   object Calc: TLabel
     StyledSettings = [Family, FontColor]
@@ -261,7 +260,6 @@ object Form2: TForm2
     Size.PlatformDefault = False
     TextSettings.Font.Size = 20.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
-    Text = 'Label2'
-    TabOrder = 20
+    TabOrder = 18
   end
 end

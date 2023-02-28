@@ -1,10 +1,10 @@
 from delphifmx import *
-from Calculator import Form2
+from Calculator import CalculatorGUI
 
 def main():
     Application.Initialize()
-    Application.Title = 'Calculator'
-    Application.MainForm = Form2(Application)
+    Application.Title = 'CalculatorGUI'
+    Application.MainForm = CalculatorGUI(Application)
     Application.MainForm.Show()
     Application.Run()
     Application.MainForm.Destroy()
