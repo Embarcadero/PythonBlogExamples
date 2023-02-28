@@ -1,7 +1,7 @@
 import os
 from delphifmx import *
 
-class Form2(Form):
+class TicTacToeGUI(Form):
 
     def __init__(self, owner):
         self.Title = None
@@ -106,7 +106,7 @@ class Form2(Form):
         else:
             self.make_move(self.p2, 2, 2, self.Pos9)
 
-
+       
 
     def has_winner(self):
         winner = None
@@ -114,7 +114,7 @@ class Form2(Form):
             # Check row combos
             if self.board[i][0] != "" and self.board[i][0] == self.board[i][1] and self.board[i][1] == self.board[i][2]:
                 winner = self.board[i][0]
-
+               
             # Check column combos
             elif self.board[0][i] != "" and self.board[0][i] == self.board[1][i] and self.board[1][i] == self.board[2][i]:
                 winner = self.board[0][i]
@@ -134,9 +134,9 @@ class Form2(Form):
             return True
 
     def ResetClick(self, Sender):
-        self.board = [[self.Pos1.Text, self.Pos2.Text, self.Pos3.Text], \
-                    [self.Pos4.Text, self.Pos5.Text, self.Pos6.Text], \
-                    [self.Pos7.Text, self.Pos8.Text, self.Pos9.Text]]
+        self.board = [["", "", ""], \
+                    ["", "", ""], \
+                    ["", "", ""]]
         self.p1 = "X"
         self.p2 = "O"
         self.player_status = 1

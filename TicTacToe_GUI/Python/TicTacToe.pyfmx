@@ -1,7 +1,7 @@
-object Form2: TForm2
+object TicTacToeGUI: TTicTacToeGUI
   Left = 0
   Top = 0
-  Caption = 'Form2'
+  Caption = 'Tic Tac Toe Game'
   ClientHeight = 480
   ClientWidth = 360
   Fill.Color = claThistle
@@ -9,21 +9,10 @@ object Form2: TForm2
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
-  OnCreate = FormCreate
-  DesignerMasterStyle = 3
-  object Title: TLabel
-    StyledSettings = [Family, FontColor]
-    Size.Width = 361.000000000000000000
-    Size.Height = 41.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00060000000000000004000000}
-    TextSettings.HorzAlign = Center
-    Text = 'TicTacToe'
-    TabOrder = 0
-  end
+  DesignerMasterStyle = 0
   object Status: TLabel
     StyledSettings = [Family, FontColor]
+    Position.X = -1.000000000000000000
     Position.Y = 440.000000000000000000
     Size.Width = 361.000000000000000000
     Size.Height = 33.000000000000000000
@@ -36,7 +25,7 @@ object Form2: TForm2
   end
   object Line1: TLine
     LineType = Diagonal
-    Position.X = -1.000000000000000000
+    Position.X = -2.000000000000000000
     Position.Y = 168.000000000000000000
     Size.Width = 362.000000000000000000
     Size.Height = 1.000000000000000000
@@ -44,7 +33,7 @@ object Form2: TForm2
   end
   object Line2: TLine
     LineType = Diagonal
-    Position.X = -3.000000000000000000
+    Position.X = -12.000000000000000000
     Position.Y = 280.000000000000000000
     Size.Width = 372.000000000000000000
     Size.Height = 1.000000000000000000
@@ -65,7 +54,6 @@ object Form2: TForm2
     Size.Width = 1.000000000000000000
     Size.Height = 321.000000000000000000
     Size.PlatformDefault = False
-    OnClick = Line4Click
   end
   object Pos1: TButton
     StyledSettings = [Family, Style, FontColor, Other]
@@ -172,8 +160,20 @@ object Form2: TForm2
     Size.Width = 121.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 16
+    TabOrder = 17
     Text = 'Reset'
     OnClick = ResetClick
+  end
+  object Title: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = -1.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'TicTacToe'
+    TabOrder = 0
   end
 end

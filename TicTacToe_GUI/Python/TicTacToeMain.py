@@ -1,10 +1,10 @@
 from delphifmx import *
-from TicTacToe import Form2
+from TicTacToe import TicTacToeGUI
 
 def main():
     Application.Initialize()
     Application.Title = 'TicTacToe'
-    Application.MainForm = Form2(Application)
+    Application.MainForm = TicTacToeGUI(Application)
     Application.MainForm.Show()
     Application.Run()
 

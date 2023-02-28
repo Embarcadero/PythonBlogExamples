@@ -1,8 +1,8 @@
 from delphifmx import *
-from TicTacToe import Form2
+from TicTacToe import TicTacToeGUI
 
 def main():
-    Application.MainForm = Form2(Application)
+    Application.MainForm = TicTacToeGUI(Application)
     Application.MainForm.Show()
 
 if __name__ == '__main__':
