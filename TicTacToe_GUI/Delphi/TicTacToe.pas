@@ -4,12 +4,11 @@ interface
 
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
-  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,
-  FMX.Controls.Presentation, FMX.StdCtrls, FMX.Objects;
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, FMX.StdCtrls,
+  FMX.Objects, FMX.Controls.Presentation;
 
 type
   TTicTacToeGUI = class(TForm)
-    Title: TLabel;
     Status: TLabel;
     Line1: TLine;
     Line2: TLine;
@@ -25,6 +24,7 @@ type
     Pos8: TButton;
     Pos9: TButton;
     Reset: TButton;
+    Title: TLabel;
     procedure Pos1Click(Sender: TObject);
     procedure Pos2Click(Sender: TObject);
     procedure Pos3Click(Sender: TObject);
@@ -50,52 +50,52 @@ implementation
 
 procedure TTicTacToeGUI.Pos1Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.Pos2Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.Pos3Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.Pos4Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.Pos5Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.Pos6Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.Pos7Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.Pos8Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.Pos9Click(Sender: TObject);
 begin
-    //
+//
 end;
 
 procedure TTicTacToeGUI.ResetClick(Sender: TObject);
 begin
-  //
+//
 end;
 
 end.
