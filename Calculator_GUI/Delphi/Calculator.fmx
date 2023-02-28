@@ -18,7 +18,7 @@ object CalculatorGUI: TCalculatorGUI
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     StyleLookup = 'DelStyle1'
-    TabOrder = 18
+    TabOrder = 19
     Text = 'Del'
     TextSettings.Font.Size = 20.000000000000000000
     OnClick = DelClick
@@ -69,6 +69,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 17
     Text = '7'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = SevenClick
   end
   object Eight: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -80,6 +81,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 15
     Text = '8'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = EightClick
   end
   object Nine: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -91,6 +93,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 12
     Text = '9'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = NineClick
   end
   object Minus: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -102,6 +105,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 6
     Text = '-'
     TextSettings.Font.Size = 24.000000000000000000
+    OnClick = MinusClick
   end
   object Four: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -113,6 +117,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 13
     Text = '4'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = FourClick
   end
   object Five: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -124,6 +129,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 11
     Text = '5'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = FiveClick
   end
   object Six: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -135,6 +141,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 8
     Text = '6'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = SixClick
   end
   object Multiply: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -146,6 +153,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 2
     Text = '*'
     TextSettings.Font.Size = 24.000000000000000000
+    OnClick = MultiplyClick
   end
   object One: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -157,6 +165,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 9
     Text = '1'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = OneClick
   end
   object Two: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -168,6 +177,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 7
     Text = '2'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = TwoClick
   end
   object Three: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -179,6 +189,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 4
     Text = '3'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = ThreeClick
   end
   object Zero: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -190,6 +201,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 5
     Text = '0'
     TextSettings.Font.Size = 20.000000000000000000
+    OnClick = ZeroClick
   end
   object Dot: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -201,6 +213,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 3
     Text = '.'
     TextSettings.Font.Size = 26.000000000000000000
+    OnClick = DotClick
   end
   object Divide: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -212,6 +225,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 1
     Text = '/'
     TextSettings.Font.Size = 24.000000000000000000
+    OnClick = DivideClick
   end
   object Equals: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -224,6 +238,7 @@ object CalculatorGUI: TCalculatorGUI
     TabOrder = 0
     Text = '='
     TextSettings.Font.Size = 24.000000000000000000
+    OnClick = EqualsClick
   end
   object Results: TLabel
     StyledSettings = [Family, FontColor]
@@ -245,6 +260,6 @@ object CalculatorGUI: TCalculatorGUI
     Size.PlatformDefault = False
     TextSettings.Font.Size = 20.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
-    TabOrder = 19
+    TabOrder = 18
   end
 end

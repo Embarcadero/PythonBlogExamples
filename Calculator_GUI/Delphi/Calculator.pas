@@ -31,7 +31,6 @@ type
     Results: TLabel;
     Calc: TLabel;
     procedure DelClick(Sender: TObject);
-    procedure ResultsClick(Sender: TObject);
     procedure CClick(Sender: TObject);
     procedure PercentClick(Sender: TObject);
     procedure PlusClick(Sender: TObject);
@@ -63,101 +62,99 @@ implementation
 
 {$R *.fmx}
 
-procedure TCalculatorGUI.DelClick(Sender: TObject);
-begin
-     //
-end;procedure TCalculatorGUI.ResultsClick(Sender: TObject);
-begin
-     //
-end;
 procedure TCalculatorGUI.CClick(Sender: TObject);
 begin
-     //
+//
+end;
+
+procedure TCalculatorGUI.DelClick(Sender: TObject);
+begin
+//
 end;
 
 procedure TCalculatorGUI.DivideClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.DotClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.EightClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.EqualsClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.FiveClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.FourClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.MinusClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.MultiplyClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.NineClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.OneClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.PercentClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.PlusClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.SevenClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.SixClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.ThreeClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.TwoClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 procedure TCalculatorGUI.ZeroClick(Sender: TObject);
 begin
-     //
+//
 end;
 
 end.
