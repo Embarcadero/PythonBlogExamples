@@ -28,12 +28,6 @@ class TicTacToeGUI(Form):
         self.p2 = "O"
         self.player_status = 1
 
-    def FormCreate(self, Sender):
-        pass
-
-    def Line4Click(self, Sender):
-        pass
-
     def make_move(self, player, row, col, Pos):
         if Pos.Text != "":
             self.Status.Text = "Please try again!"
