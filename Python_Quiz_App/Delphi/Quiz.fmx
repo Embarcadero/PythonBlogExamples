@@ -1,0 +1,117 @@
+object QuizForm: TQuizForm
+  Left = 0
+  Top = 0
+  Caption = 'Questions'
+  ClientHeight = 550
+  ClientWidth = 350
+  Fill.Color = xFFF8F9EA
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object QuestionNumberLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = '1 of 10'
+    TabOrder = 1
+  end
+  object Question: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 105.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.VertAlign = Leading
+    Text = 'Question:'
+    TabOrder = 0
+  end
+  object OptionA: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'OptionA'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = OptionAClick
+  end
+  object OptionB: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'OptionB'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = OptionBClick
+  end
+  object OptionC: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'OptionC'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = OptionCClick
+  end
+  object OptionD: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'OptionDStyle1'
+    TabOrder = 3
+    Text = 'OptionD'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = OptionDClick
+  end
+  object NextQuestion: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 240.000000000000000000
+    Position.Y = 488.000000000000000000
+    Size.Width = 96.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Next'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = NextQuestionClick
+  end
+  object AnswerStatus: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.Y = 440.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Status'
+    TabOrder = 7
+  end
+end
