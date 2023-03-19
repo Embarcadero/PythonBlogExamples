@@ -1,0 +1,54 @@
+object TestForm: TTestForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'Enter your TODO task'
+    TabOrder = 0
+  end
+  object taskEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 16.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 273.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object listBox: TListBox
+    Position.X = 304.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 409.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 317.000000000000000000
+    Viewport.Height = 405.000000000000000000
+  end
+  object btnAdd: TButton
+    Position.X = 208.000000000000000000
+    Position.Y = 96.000000000000000000
+    TabOrder = 4
+    Text = 'Add Task'
+    OnClick = btnAddClick
+  end
+  object bthDelete: TButton
+    Position.X = 208.000000000000000000
+    Position.Y = 144.000000000000000000
+    TabOrder = 3
+    Text = 'Delete Task'
+    OnClick = bthDeleteClick
+  end
+end
