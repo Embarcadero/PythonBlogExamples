@@ -1,7 +1,7 @@
 import os
 from delphifmx import *
 
-class Length(Form):
+class Time(Form):
 
     def __init__(self, owner):
         self.FromValue = None
@@ -18,20 +18,19 @@ class Length(Form):
         self.ValueToLabel = None
         self.BackButton = None
         self.Status = None
-        self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "LengthForm.pyfmx"))
+        self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "TimeForm.pyfmx"))
 
-
-        # Addtional initializations 
+        # Addtional initializations
         # Dictionary that gives us the relationship between units
         self.data = {
-            "meter":{"meter":1, "kilometer":1/1000, "centimeter":100, "millimeter":1000, "yard":1.094, "foot":3.281, "inch":39.37, "mile":1/1609},
-            "kilometer":{"meter":1000, "kilometer":1, "centimeter":100000, "millimeter":1000000, "yard":1094, "foot":3281, "inch":39370, "mile":1.609},
-            "centimeter":{"meter":1/100, "kilometer":1/100000, "centimeter":1, "millimeter":10, "yard":1/91.44, "foot":1/30.48, "inch":1/2.54, "mile":1/160900},
-            "millimeter":{"meter":1/1000, "kilometer":1/1000000, "centimeter":1/10, "millimeter":1, "yard":1/914.4, "foot":1/304.8, "inch":1/25.4, "mile":1/1609000},
-            "yard":{"meter":1/1.094, "kilometer":1/1094, "centimeter":91.44, "millimeter":914.4, "yard":1, "foot":3, "inch":36, "mile":1/1760},
-            "foot":{"meter":1/3.281, "kilometer":1/3281, "centimeter":30.48, "millimeter":304.8, "yard":1/3, "foot":1, "inch":12, "mile":1/5280},
-            "inch":{"meter":1/39.37, "kilometer":1/39370, "centimeter":2.54, "millimeter":25.4, "yard":1/36, "foot":1/12, "inch":1, "mile":1/63360},
-            "mile":{"meter":1609, "kilometer":1.609, "centimeter":160900, "millimeter":1609000, "yard":1760, "foot":5280, "inch":63360, "mile":1}
+            "second":{"second":1, "millisecond":1000, "minute":1/60, "hour":1/3600, "day":1/86400, "week":1/6084800, "month":1/2628000, "year":1/31540000},
+            "millisecond":{"second":1/1000, "millisecond":1, "minute":1/60000, "hour":1/3600000, "day":1/86400000, "week":1/6084800000, "month":1/2628000000, "year":1/31540000000},
+            "minute":{"second":60, "millisecond":60000, "minute":1, "hour":1/60, "day":1/1440, "week":1/10080, "month":1/43800, "year":1/525600},
+            "hour":{"second":3600, "millisecond":3600000, "minute":60, "hour":1, "day":1/24, "week":1/168, "month":1/730, "year":1/8760},
+            "day":{"second":86400, "millisecond":86400000, "minute":1440, "hour":24, "day":1, "week":1/7, "month":1/30.417, "year":1/365},
+            "week":{"second":604800, "millisecond":604800000, "minute":10080, "hour":168, "day":7, "week":1, "month":1/4.345, "year":1/52.143},
+            "month":{"second":2628000, "millisecond":2628000000, "minute":43800, "hour":730, "day":30.417, "week":4.345, "month":1, "year":1/12},
+            "year":{"second":31540000, "millisecond":31540000000, "minute":525600, "hour":8760, "day":365, "week":52.143, "month":12, "year":1}
         }
 
         # Load the currencies in key values of the self.data dictionary into the FromCurrency and ToCurrency combo boxes
@@ -53,6 +52,7 @@ class Length(Form):
             self.Status.Text = "" # Reset status since conversion was successful (incase there was an alert earlier)
         else: 
             self.Status.Text = "Please fill all relevant inputs!"
+
     def BackButtonClick(self, Sender):
         self.Destroy()
         Application.MainForm.Show()

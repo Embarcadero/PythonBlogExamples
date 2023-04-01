@@ -1,0 +1,141 @@
+object Length: TLength
+  Left = 0
+  Top = 0
+  Caption = 'Length'
+  ClientHeight = 480
+  ClientWidth = 306
+  Fill.Color = xFFDFF9F9
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object FromValue: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 176.000000000000000000
+    Position.Y = 168.000000000000000000
+  end
+  object UnitFromLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 136.000000000000000000
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Unit'
+    TabOrder = 13
+  end
+  object ValueFromLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 176.000000000000000000
+    Position.Y = 136.000000000000000000
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Value'
+    TabOrder = 6
+  end
+  object Title: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.Y = 24.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 36.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Length'
+    TabOrder = 4
+  end
+  object FromLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 96.000000000000000000
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'From'
+    TabOrder = 10
+  end
+  object ToLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 248.000000000000000000
+    TextSettings.Font.Size = 20.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'To'
+    TabOrder = 8
+  end
+  object Convert: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 184.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = 'Convert'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = ConvertClick
+  end
+  object FromUnit: TComboBox
+    Position.X = 40.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 18
+  end
+  object ToUnit: TComboBox
+    Position.X = 40.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 17
+  end
+  object ToValue: TLabel
+    Position.X = 176.000000000000000000
+    Position.Y = 312.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '-'
+    TabOrder = 1
+  end
+  object UnitToLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 280.000000000000000000
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Unit'
+    TabOrder = 7
+  end
+  object ValueToLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 176.000000000000000000
+    Position.Y = 280.000000000000000000
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Value'
+    TabOrder = 2
+  end
+  object BackButton: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 40.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Back'
+    TextSettings.Font.Size = 14.000000000000000000
+    OnClick = BackButtonClick
+  end
+  object Status: TLabel
+    StyledSettings = [Family, Style]
+    Position.X = 40.000000000000000000
+    Position.Y = 368.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.FontColor = claRed
+    TextSettings.HorzAlign = Center
+    Text = '-'
+    TabOrder = 19
+  end
+end

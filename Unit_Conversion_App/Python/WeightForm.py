@@ -1,7 +1,7 @@
 import os
 from delphifmx import *
 
-class Length(Form):
+class Weight(Form):
 
     def __init__(self, owner):
         self.FromValue = None
@@ -18,20 +18,17 @@ class Length(Form):
         self.ValueToLabel = None
         self.BackButton = None
         self.Status = None
-        self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "LengthForm.pyfmx"))
-
+        self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "WeightForm.pyfmx"))
 
         # Addtional initializations 
         # Dictionary that gives us the relationship between units
         self.data = {
-            "meter":{"meter":1, "kilometer":1/1000, "centimeter":100, "millimeter":1000, "yard":1.094, "foot":3.281, "inch":39.37, "mile":1/1609},
-            "kilometer":{"meter":1000, "kilometer":1, "centimeter":100000, "millimeter":1000000, "yard":1094, "foot":3281, "inch":39370, "mile":1.609},
-            "centimeter":{"meter":1/100, "kilometer":1/100000, "centimeter":1, "millimeter":10, "yard":1/91.44, "foot":1/30.48, "inch":1/2.54, "mile":1/160900},
-            "millimeter":{"meter":1/1000, "kilometer":1/1000000, "centimeter":1/10, "millimeter":1, "yard":1/914.4, "foot":1/304.8, "inch":1/25.4, "mile":1/1609000},
-            "yard":{"meter":1/1.094, "kilometer":1/1094, "centimeter":91.44, "millimeter":914.4, "yard":1, "foot":3, "inch":36, "mile":1/1760},
-            "foot":{"meter":1/3.281, "kilometer":1/3281, "centimeter":30.48, "millimeter":304.8, "yard":1/3, "foot":1, "inch":12, "mile":1/5280},
-            "inch":{"meter":1/39.37, "kilometer":1/39370, "centimeter":2.54, "millimeter":25.4, "yard":1/36, "foot":1/12, "inch":1, "mile":1/63360},
-            "mile":{"meter":1609, "kilometer":1.609, "centimeter":160900, "millimeter":1609000, "yard":1760, "foot":5280, "inch":63360, "mile":1}
+            "kilogram":{"kilogram":1, "gram":1000, "milligram":1000000, "metric ton":1/1000, "pound":2.205, "ounce":35.274},
+            "gram":{"kilogram":1/1000, "gram":1, "milligram":1000, "metric ton":1/1000000, "pound":1/453.6, "ounce":1/28.35},
+            "milligram":{"kilogram":1/1000000, "gram":1/1000, "milligram":1, "metric ton":1/1000000000, "pound":1/453600, "ounce":1/28350},
+            "metric ton":{"kilogram":1000, "gram":1000000, "milligram":1000000000, "metric ton":1, "pound":2205, "ounce":35270},
+            "pound":{"kilogram":1/2.205, "gram":453.6, "milligram":453600, "metric ton":2205, "pound":1, "ounce":16},
+            "ounce":{"kilogram":1/35.274, "gram":28.35, "milligram":28350, "metric ton":1/35270, "pound":1/16, "ounce":1}
         }
 
         # Load the currencies in key values of the self.data dictionary into the FromCurrency and ToCurrency combo boxes
@@ -53,6 +50,7 @@ class Length(Form):
             self.Status.Text = "" # Reset status since conversion was successful (incase there was an alert earlier)
         else: 
             self.Status.Text = "Please fill all relevant inputs!"
+
     def BackButtonClick(self, Sender):
         self.Destroy()
         Application.MainForm.Show()
