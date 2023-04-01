@@ -1,10 +1,10 @@
-object Length: TLength
+object Time: TTime
   Left = 0
   Top = 0
-  Caption = 'Length'
+  Caption = 'Time'
   ClientHeight = 480
   ClientWidth = 306
-  Fill.Color = xFFDFF9F9
+  Fill.Color = xFFFBDDDD
   Fill.Kind = Solid
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -23,7 +23,7 @@ object Length: TLength
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     Text = 'Unit'
-    TabOrder = 13
+    TabOrder = 8
   end
   object ValueFromLabel: TLabel
     StyledSettings = [Family, FontColor]
@@ -32,7 +32,7 @@ object Length: TLength
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     Text = 'Value'
-    TabOrder = 6
+    TabOrder = 4
   end
   object Title: TLabel
     StyledSettings = [Family, FontColor]
@@ -43,8 +43,8 @@ object Length: TLength
     TextSettings.Font.Size = 36.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.HorzAlign = Center
-    Text = 'Length'
-    TabOrder = 4
+    Text = 'Time'
+    TabOrder = 2
   end
   object FromLabel: TLabel
     StyledSettings = [Family, FontColor]
@@ -53,7 +53,7 @@ object Length: TLength
     TextSettings.Font.Size = 20.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     Text = 'From'
-    TabOrder = 10
+    TabOrder = 6
   end
   object ToLabel: TLabel
     StyledSettings = [Family, FontColor]
@@ -62,7 +62,7 @@ object Length: TLength
     TextSettings.Font.Size = 20.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     Text = 'To'
-    TabOrder = 8
+    TabOrder = 5
   end
   object Convert: TButton
     StyledSettings = [Family, Style, FontColor]
@@ -71,7 +71,7 @@ object Length: TLength
     Size.Width = 89.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 14
+    TabOrder = 9
     Text = 'Convert'
     TextSettings.Font.Size = 14.000000000000000000
     OnClick = ConvertClick
@@ -79,12 +79,12 @@ object Length: TLength
   object FromUnit: TComboBox
     Position.X = 40.000000000000000000
     Position.Y = 168.000000000000000000
-    TabOrder = 18
+    TabOrder = 12
   end
   object ToUnit: TComboBox
     Position.X = 40.000000000000000000
     Position.Y = 312.000000000000000000
-    TabOrder = 17
+    TabOrder = 11
   end
   object ToValue: TLabel
     Position.X = 176.000000000000000000
@@ -111,7 +111,7 @@ object Length: TLength
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     Text = 'Value'
-    TabOrder = 2
+    TabOrder = 3
   end
   object BackButton: TButton
     StyledSettings = [Family, FontColor]
@@ -120,7 +120,7 @@ object Length: TLength
     Size.Width = 89.000000000000000000
     Size.Height = 33.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 12
+    TabOrder = 13
     Text = 'Back'
     TextSettings.Font.Size = 14.000000000000000000
     OnClick = BackButtonClick
@@ -136,6 +136,6 @@ object Length: TLength
     TextSettings.FontColor = claRed
     TextSettings.HorzAlign = Center
     Text = '-'
-    TabOrder = 19
+    TabOrder = 20
   end
 end

@@ -1,0 +1,73 @@
+object Main: TMain
+  Left = 0
+  Top = 0
+  Caption = 'Unit Conversion App'
+  ClientHeight = 480
+  ClientWidth = 306
+  Fill.Color = xFFF5E3EB
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Title: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.Y = 24.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 36.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Unit Conversion App'
+    TabOrder = 2
+  end
+  object TemperatureFromButton: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 80.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Temperature'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = TemperatureFromButtonClick
+  end
+  object LengthFormButton: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 80.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Length'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = LengthFormButtonClick
+  end
+  object WeightFromButton: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 80.000000000000000000
+    Position.Y = 400.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Weight'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = WeightFromButtonClick
+  end
+  object TimeFormButton: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 80.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Time'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = TimeFormButtonClick
+  end
+end

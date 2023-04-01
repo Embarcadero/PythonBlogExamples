@@ -1,10 +1,10 @@
-object Length: TLength
+object Weight: TWeight
   Left = 0
   Top = 0
-  Caption = 'Length'
+  Caption = 'Weight'
   ClientHeight = 480
   ClientWidth = 306
-  Fill.Color = xFFDFF9F9
+  Fill.Color = xFFEAE6FB
   Fill.Kind = Solid
   FormFactor.Width = 320
   FormFactor.Height = 480
@@ -43,7 +43,7 @@ object Length: TLength
     TextSettings.Font.Size = 36.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.HorzAlign = Center
-    Text = 'Length'
+    Text = 'Weight'
     TabOrder = 4
   end
   object FromLabel: TLabel
@@ -136,6 +136,6 @@ object Length: TLength
     TextSettings.FontColor = claRed
     TextSettings.HorzAlign = Center
     Text = '-'
-    TabOrder = 19
+    TabOrder = 20
   end
 end
