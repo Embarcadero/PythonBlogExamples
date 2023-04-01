@@ -1,1 +1,57 @@
-
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainMenu'
+  ClientHeight = 500
+  ClientWidth = 360
+  Fill.Color = xFFEEFBFB
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Title: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.Y = 48.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 36.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Time Widget App'
+    TabOrder = 1
+  end
+  object StopwatchFormButton: TButton
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 40.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 40.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 242.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Stopwatch'
+    TextSettings.Font.Size = 18.000000000000000000
+    OnClick = StopwatchFormButtonClick
+  end
+  object TimerFormButton: TButton
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 40.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 40.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 314.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Timer'
+    TextSettings.Font.Size = 18.000000000000000000
+    OnClick = TimerFormButtonClick
+  end
+end

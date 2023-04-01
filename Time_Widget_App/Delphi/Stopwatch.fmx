@@ -1,0 +1,105 @@
+object StopwatchForm: TStopwatchForm
+  Left = 0
+  Top = 0
+  Caption = 'Stopwatch'
+  ClientHeight = 500
+  ClientWidth = 360
+  Fill.Color = xFFF0D4D4
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Title: TLabel
+    StyledSettings = [Family, FontColor]
+    Size.Width = 360.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 36.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'Stopwatch'
+    TabOrder = 2
+  end
+  object Time: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.Y = 136.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Time'
+    TabOrder = 0
+  end
+  object Play: TButton
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 40.000000000000000000
+    Margins.Top = 50.000000000000000000
+    Margins.Right = 40.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 250.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Play'
+    TextSettings.Font.Size = 18.000000000000000000
+    OnClick = PlayClick
+  end
+  object Pause: TButton
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 40.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 40.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 306.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Pause'
+    TextSettings.Font.Size = 18.000000000000000000
+    OnClick = PauseClick
+  end
+  object Reset: TButton
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 40.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 40.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 362.000000000000000000
+    Size.Width = 280.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Reset'
+    TextSettings.Font.Size = 18.000000000000000000
+    OnClick = ResetClick
+  end
+  object Back: TButton
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 40.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 40.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 450.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Back'
+    TextSettings.Font.Size = 18.000000000000000000
+    OnClick = BackClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    OnTimer = Timer1Timer
+    Left = 312
+    Top = 456
+  end
+end
