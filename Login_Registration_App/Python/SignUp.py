@@ -22,16 +22,19 @@ class SignUpForm(Form):
         self.Signup = None
         self.Status = None
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "SignUp.pyfmx"))
+        self.owner = owner
 
     def SignupClick(self, Sender):
         if self.FnameText.Text == "" or self.LNameText.Text == "" or self.EmailText.Text == "" or self.PasswordText.Text == "" or self.CPasswordText.Text == "":
             self.Status.Text = "Incomplete details!"
         elif self.CPasswordText.Text != self.PasswordText.Text:
             self.Status.Text = "Passwords do not match!"
-        else:            
+        else:
             query = "INSERT INTO users VALUES ('{}', '{}','{}', '{}')".format(self.EmailText.Text, self.FnameText.Text, self.LNameText.Text, self.PasswordText.Text)
 
             # execute the insert record statement
             engine.execute(query)
 
-            self.Status.Text = "Successful SignUp"
+            self.owner.Status.Text = "Successful SignUp. Login Now!!"
+            self.Destroy()
+            #self.owner.Show()

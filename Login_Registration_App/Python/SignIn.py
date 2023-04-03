@@ -34,6 +34,6 @@ class SignInForm(Form):
                 self.Status.Text = "Successful login. Welcome {}".format(Fname)
 
     def SignupClick(self, Sender):
-        Application.MainForm = SignUpForm(Application)
-        Application.MainForm.Show()
-        Application.MainForm = SignInForm(Application)
+        signup_form = SignUpForm(self)
+        signup_form.Show()
+        #self.Show()
