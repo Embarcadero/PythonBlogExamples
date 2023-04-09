@@ -5,7 +5,7 @@ from Results import ResultsForm  # import result form to create window
 
 class QuizForm(Form):
 
-    def __init__(self, owner, QuestionNumber, Score):
+    def __init__(self, owner):
         self.QuestionNumberLabel = None
         self.Question = None
         self.OptionA = None
@@ -17,9 +17,8 @@ class QuizForm(Form):
         self.LoadProps(os.path.join(os.path.dirname(
             os.path.abspath(__file__)), "Quiz.pyfmx"))
 
-        # Store variables from previous form to make them accessible
-        self.QuestionNumber = QuestionNumber
-        self.Score = Score
+        self.Score = 0 # Initialize quiz score
+        self.QuestionNumber = 1 # Initialize question number
 
         # Dictionary with all of the quiz data
         self.QuizQuestions = {
@@ -35,20 +34,7 @@ class QuizForm(Form):
             10: {"Question": "Which statement is used to stop a loop?", "Answer": "break", "Options": ["break", "exit", "return", "stop"]}
         }
 
-        # Display options of the current question
-        self.OptionA.Text = self.QuizQuestions[self.QuestionNumber]["Options"][0]
-        self.OptionB.Text = self.QuizQuestions[self.QuestionNumber]["Options"][1]
-        self.OptionC.Text = self.QuizQuestions[self.QuestionNumber]["Options"][2]
-        self.OptionD.Text = self.QuizQuestions[self.QuestionNumber]["Options"][3]
-
-        # Display question number
-        self.QuestionNumberLabel.Text = str(self.QuestionNumber) + " of 10"
-
-        # Display question text
-        self.Question.Text = self.QuizQuestions[self.QuestionNumber]["Question"]
-
-        # Resetting Status
-        self.AnswerStatus.Text = ""
+        self.__UpdateLabels()
 
     def OptionAClick(self, Sender):
         # Ensure some button not already clicked
@@ -99,7 +85,6 @@ class QuizForm(Form):
             self.AnswerStatus.Text = "Incorrect"
 
     def NextQuestionClick(self, Sender):
-
         # Checking if user has answered a question.
         # User can only proceed to next question if an answer has been selected
         if self.AnswerStatus.Text == "" or self.AnswerStatus.Text == "Select an answer before proceeding!":
@@ -108,9 +93,23 @@ class QuizForm(Form):
         else:
             self.QuestionNumber += 1  # Update question number to display the next one
             if self.QuestionNumber <= 10:  # If the ten questions have not been asked
-                self.NextQuestionWindow = QuizForm(
-                    self, QuestionNumber=self.QuestionNumber, Score=self.Score)
-                self.NextQuestionWindow.show()
+                self.__UpdateLabels()
             else:  # It the ten questions have been asked, show the result form
                 self.ResultsWindow = ResultsForm(self, Score=self.Score)
                 self.ResultsWindow.show()
+
+    def __UpdateLabels(self):
+        # Display options of the current question
+        self.OptionA.Text = self.QuizQuestions[self.QuestionNumber]["Options"][0]
+        self.OptionB.Text = self.QuizQuestions[self.QuestionNumber]["Options"][1]
+        self.OptionC.Text = self.QuizQuestions[self.QuestionNumber]["Options"][2]
+        self.OptionD.Text = self.QuizQuestions[self.QuestionNumber]["Options"][3]
+
+        # Display question number
+        self.QuestionNumberLabel.Text = str(self.QuestionNumber) + " of 10"
+
+        # Display question text
+        self.Question.Text = self.QuizQuestions[self.QuestionNumber]["Question"]
+
+        # Resetting Status
+        self.AnswerStatus.Text = ""
