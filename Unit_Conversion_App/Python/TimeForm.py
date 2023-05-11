@@ -50,9 +50,9 @@ class Time(Form):
                 amountCalculated = '{:.3e}'.format(amountCalculated)
             self.ToValue.Text = amountCalculated
             self.Status.Text = "" # Reset status since conversion was successful (incase there was an alert earlier)
-        else: 
+        else:
             self.Status.Text = "Please fill all relevant inputs!"
 
     def BackButtonClick(self, Sender):
-        self.Destroy()
         Application.MainForm.Show()
+        self.Destroy()

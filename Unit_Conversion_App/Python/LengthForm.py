@@ -21,7 +21,7 @@ class Length(Form):
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "LengthForm.pyfmx"))
 
 
-        # Addtional initializations 
+        # Addtional initializations
         # Dictionary that gives us the relationship between units
         self.data = {
             "meter":{"meter":1, "kilometer":1/1000, "centimeter":100, "millimeter":1000, "yard":1.094, "foot":3.281, "inch":39.37, "mile":1/1609},
@@ -51,8 +51,8 @@ class Length(Form):
                 amountCalculated = '{:.3e}'.format(amountCalculated)
             self.ToValue.Text = amountCalculated
             self.Status.Text = "" # Reset status since conversion was successful (incase there was an alert earlier)
-        else: 
+        else:
             self.Status.Text = "Please fill all relevant inputs!"
     def BackButtonClick(self, Sender):
-        self.Destroy()
         Application.MainForm.Show()
+        self.Destroy()

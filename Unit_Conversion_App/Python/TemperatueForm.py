@@ -25,7 +25,7 @@ class Temperature(Form):
         self.data = {
             "celsius":{"celsius":lambda a: a, "kelvin":lambda a: a+273.15, "fahrenheit":lambda a: a*(9/5)+32},
             "kelvin":{"celsius":lambda a: a-273.15, "kelvin":lambda a: a, "fahrenheit":lambda a: (a-273.15)*(9/5)+32},
-            "fahrenheit":{"celsius":lambda a: (a-32)*(5/9), "kelvin":lambda a: (a-32)*(5/9)+273.15, "fahrenheit":lambda a: a}                
+            "fahrenheit":{"celsius":lambda a: (a-32)*(5/9), "kelvin":lambda a: (a-32)*(5/9)+273.15, "fahrenheit":lambda a: a}
         }
 
         # Load the currencies in key values of the self.data dictionary into the FromCurrency and ToCurrency combo boxes
@@ -40,14 +40,14 @@ class Temperature(Form):
             given = self.FromUnit.Selected.Text
             to = self.ToUnit.Selected.Text
             amountGiven = int(self.FromValue.Text)
-            amountCalculated  = self.data[given][to](amountGiven) # using the lambda 
+            amountCalculated  = self.data[given][to](amountGiven) # using the lambda
             if len(str(amountCalculated)) > 8: # if the value is longer than 8 digits then use scientific notation
                 amountCalculated = '{:.3e}'.format(amountCalculated)
             self.ToValue.Text = amountCalculated
-            self.Status.Text = "" # reset status since conversion was successful (incase there was an alert earlier) 
-        else: 
-            self.Status.Text = "Please fill all relevant inputs!"        
-        
+            self.Status.Text = "" # reset status since conversion was successful (incase there was an alert earlier)
+        else:
+            self.Status.Text = "Please fill all relevant inputs!"
+
     def BackButtonClick(self, Sender):
-        self.Destroy()
         Application.MainForm.Show()
+        self.Destroy()

@@ -20,7 +20,7 @@ class Weight(Form):
         self.Status = None
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "WeightForm.pyfmx"))
 
-        # Addtional initializations 
+        # Addtional initializations
         # Dictionary that gives us the relationship between units
         self.data = {
             "kilogram":{"kilogram":1, "gram":1000, "milligram":1000000, "metric ton":1/1000, "pound":2.205, "ounce":35.274},
@@ -48,9 +48,9 @@ class Weight(Form):
                 amountCalculated = '{:.3e}'.format(amountCalculated)
             self.ToValue.Text = amountCalculated
             self.Status.Text = "" # Reset status since conversion was successful (incase there was an alert earlier)
-        else: 
+        else:
             self.Status.Text = "Please fill all relevant inputs!"
 
     def BackButtonClick(self, Sender):
-        self.Destroy()
         Application.MainForm.Show()
+        self.Destroy()
