@@ -18,7 +18,7 @@ class StopwatchForm(Form):
 
     def StartClick(self, Sender):
         self.Timer1.Enabled = True
-        self.Timer1.Interval = 10 
+        self.Timer1.Interval = 10
 
     def PauseClick(self, Sender):
         self.Timer1.Enabled = False
@@ -29,12 +29,12 @@ class StopwatchForm(Form):
         self.Timer1.Enabled = False
 
     def BackClick(self, Sender):
-        self.Destroy()
         Application.MainForm.Show()
+        self.Destroy()
 
     def Timer1Timer(self, Sender):
         # Keep adding the time interval
-        ElapsedTime = self.Timer1.Tag + self.Timer1.Interval 
+        ElapsedTime = self.Timer1.Tag + self.Timer1.Interval
 
         # Calculate the number of minutes, seconds and milliseconds
         Minutes = ElapsedTime // (60 * 1000)

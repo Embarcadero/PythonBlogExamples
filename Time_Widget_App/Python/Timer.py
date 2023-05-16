@@ -78,8 +78,8 @@ class TimerForm(Form):
             self.TimeDuration.Enabled = True
 
     def BackClick(self, Sender):
-        self.Destroy()
         Application.MainForm.Show()
+        self.Destroy()
 
     def Timer1Timer(self, Sender):
         ElapsedTime = self.Timer1.Tag - self.Timer1.Interval
