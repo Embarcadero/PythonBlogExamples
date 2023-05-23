@@ -1,0 +1,157 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'BMI Calculator'
+  ClientHeight = 500
+  ClientWidth = 360
+  Fill.Kind = Gradient
+  Fill.Gradient.Points = <
+    item
+      Color = xFFF7E4E4
+      Offset = 0.177018627524375900
+    end
+    item
+      Color = claWhite
+      Offset = 1.000000000000000000
+    end>
+  Fill.Gradient.Style = Radial
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object WeightEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 120.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object HeightFeetEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 120.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ResultsButton: TButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 132.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Results'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = ResultsButtonClick
+  end
+  object HeightLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 88.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Height:'
+    TabOrder = 11
+  end
+  object WeightLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 88.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'Weight:'
+    TabOrder = 8
+  end
+  object Title: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.Y = 24.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 28.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    Text = 'BMI Calculator App'
+    TabOrder = 5
+  end
+  object PoundsRadio: TRadioButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 88.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'lbs'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  object KgRadio: TRadioButton
+    StyledSettings = [Family, FontColor]
+    Position.X = 88.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'kg'
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+  end
+  object FeetLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 88.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'ft:'
+    TabOrder = 9
+  end
+  object HeightInchEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 120.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object InchLabel: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 88.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 25.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    Text = 'in:'
+    TabOrder = 4
+  end
+  object Status: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.Y = 440.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.HorzAlign = Center
+    TabOrder = 7
+  end
+end
