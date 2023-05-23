@@ -11,7 +11,7 @@ class ResultsForm(Form):
         self.Title = None
         self.Reset = None
         self.LoadProps(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Results.pyfmx"))
-        
+
         # More initializations
         self.BMIScore.Text = str(BMI)
         self.BMI = BMI
@@ -25,11 +25,11 @@ class ResultsForm(Form):
         # Categorization according to BMI
         if BMI < 18.5:
             self.CategoryLabel.Text = "Underweight"
-        elif 18.5 < BMI < 24.9:
+        elif 18.5 <= BMI < 25:
             self.CategoryLabel.Text = "Healthy"
-        elif 25.0 < BMI < 29.9:
+        elif 25.0 <= BMI < 30:
             self.CategoryLabel.Text = "Overweight"
-        elif BMI > 30:
+        elif BMI >= 30:
             self.CategoryLabel.Text = "Obese"
 
         self.DetailsLabel.Text = self.Detail[self.CategoryLabel.Text] # Display details and suggestions according to the category

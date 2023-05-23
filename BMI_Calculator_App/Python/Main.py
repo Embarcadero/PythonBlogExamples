@@ -37,4 +37,5 @@ class MainForm(Form):
         if self.PoundsRadio.IsChecked:
             weight = weight / 2.205
         height = heightft * 0.3048 + heightin * 0.0254 # Conversion to meters
-        return round(weight / (height**2), 2) # BMI = Weight/ (Height)^2
+        bmi = round(weight / (height**2), 2) # BMI = Weight/ (Height)^2
+        return bmi
