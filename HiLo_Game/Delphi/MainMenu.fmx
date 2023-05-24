@@ -1,92 +1,53 @@
-object GameForm: TGameForm
+object MainForm: TMainForm
   Left = 0
   Top = 0
-  Caption = 'HiLo Game'
+  Caption = 'MainMenu'
   ClientHeight = 500
   ClientWidth = 360
-  Fill.Color = xFFD4F8EE
+  Fill.Color = xFFFDCFCF
   Fill.Kind = Solid
   StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object ScoreLabel: TLabel
+  object Title: TLabel
     StyledSettings = [Family, FontColor]
-    Position.X = 120.000000000000000000
-    Position.Y = 328.000000000000000000
-    Size.Width = 120.000000000000000000
-    Size.Height = 33.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 57.000000000000000000
     Size.PlatformDefault = False
-    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.Size = 48.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
     TextSettings.HorzAlign = Center
-    Text = 'Score: 0'
-    TabOrder = 6
-  end
-  object Number: TLabel
-    StyledSettings = [Family, FontColor]
-    Position.X = 120.000000000000000000
-    Position.Y = 112.000000000000000000
-    Size.Width = 120.000000000000000000
-    Size.Height = 73.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Size = 36.000000000000000000
-    TextSettings.Font.StyleExt = {00060000000000000004000000}
-    TextSettings.HorzAlign = Center
-    Text = '-'
+    Text = 'HiLo Game'
     TabOrder = 0
   end
-  object HighButton: TButton
+  object Rules: TLabel
     StyledSettings = [Family, FontColor]
-    Position.X = 56.000000000000000000
-    Position.Y = 264.000000000000000000
-    Size.Width = 97.000000000000000000
-    Size.Height = 33.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 321.000000000000000000
+    Size.Height = 169.000000000000000000
     Size.PlatformDefault = False
-    TabOrder = 3
-    Text = 'High'
-    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.Size = 18.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
-    OnClick = HighButtonClick
-  end
-  object LowButton: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 216.000000000000000000
-    Position.Y = 264.000000000000000000
-    Size.Width = 96.000000000000000000
-    Size.Height = 33.000000000000000000
-    Size.PlatformDefault = False
+    TextSettings.VertAlign = Leading
+    Text = 'Rules:'
     TabOrder = 1
-    Text = 'Low'
-    TextSettings.Font.Size = 16.000000000000000000
-    TextSettings.Font.StyleExt = {00060000000000000004000000}
-    OnClick = LowButtonClick
   end
-  object AgainButton: TButton
-    Enabled = False
+  object Start: TButton
     StyledSettings = [Family, FontColor]
     Position.X = 64.000000000000000000
-    Position.Y = 404.000000000000000000
+    Position.Y = 348.000000000000000000
     Size.Width = 241.000000000000000000
     Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
-    Text = 'Play Again'
+    Text = 'START'
     TextSettings.Font.Size = 18.000000000000000000
     TextSettings.Font.StyleExt = {00060000000000000004000000}
-    OnClick = AgainButtonClick
-  end
-  object StatusLabel: TLabel
-    StyledSettings = [Family, Size, Style]
-    Position.X = 64.000000000000000000
-    Position.Y = 368.000000000000000000
-    Size.Width = 241.000000000000000000
-    Size.Height = 25.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.FontColor = claCrimson
-    TextSettings.HorzAlign = Center
-    TabOrder = 4
+    OnClick = StartClick
   end
   object StyleBook1: TStyleBook
     Styles = <
@@ -4002,7 +3963,7 @@ object GameForm: TGameForm
           6C6174666F726D44656661756C74080B5374796C654C6F6F6B75700610737069
           6E626F74746F6D627574746F6E085461624F72646572020000000000}
       end>
-    Left = 280
-    Top = 120
+    Left = 264
+    Top = 160
   end
 end
