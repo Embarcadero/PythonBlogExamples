@@ -1,237 +1,41 @@
-object GameForm: TGameForm
+object MainForm: TMainForm
   Left = 0
   Top = 0
-  Caption = 'Memory Game'
+  Caption = 'MainMenu'
   ClientHeight = 500
   ClientWidth = 360
-  Fill.Color = xFFE1F9FD
+  Fill.Color = xFFF6ECE2
   Fill.Kind = Solid
   StyleBook = StyleBook1
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
-  object ScoreLabel: TLabel
+  object Title: TLabel
     StyledSettings = [FontColor]
-    Position.X = 96.000000000000000000
-    Position.Y = 24.000000000000000000
-    Size.Width = 120.000000000000000000
-    Size.Height = 25.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 97.000000000000000000
     Size.PlatformDefault = False
     TextSettings.Font.Family = 'Britannic'
-    TextSettings.Font.Size = 24.000000000000000000
+    TextSettings.Font.Size = 48.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
-    Text = 'Score:'
-    TabOrder = 20
-  end
-  object TriesLabel: TLabel
-    StyledSettings = [FontColor]
-    Position.X = 96.000000000000000000
-    Position.Y = 48.000000000000000000
-    Size.Width = 120.000000000000000000
-    Size.Height = 25.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Family = 'Britannic'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    Text = 'Tries:'
-    TabOrder = 19
-  end
-  object Button1: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 80.000000000000000000
-    Position.Y = 88.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'Memory Game'
     TabOrder = 0
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button1Click
   end
-  object Button2: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 200.000000000000000000
-    Position.Y = 88.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
+  object StartButton: TButton
+    StyledSettings = [FontColor]
+    Position.X = 96.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 41.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button2Click
-  end
-  object Button3: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 80.000000000000000000
-    Position.Y = 152.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 2
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button3Click
-  end
-  object Button4: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 200.000000000000000000
-    Position.Y = 152.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 3
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button4Click
-  end
-  object Button5: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 80.000000000000000000
-    Position.Y = 216.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 4
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button5Click
-  end
-  object Button6: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 200.000000000000000000
-    Position.Y = 216.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 5
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button6Click
-  end
-  object Button7: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 80.000000000000000000
-    Position.Y = 280.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 6
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button7Click
-  end
-  object Button8: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 200.000000000000000000
-    Position.Y = 280.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 7
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button8Click
-  end
-  object Button9: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 80.000000000000000000
-    Position.Y = 344.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 8
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button9Click
-  end
-  object Button10: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 200.000000000000000000
-    Position.Y = 344.000000000000000000
-    Size.Width = 80.000000000000000000
-    Size.Height = 49.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 9
-    Text = '?'
-    TextSettings.Font.Size = 24.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    OnClick = Button10Click
-  end
-  object BackButton: TButton
-    StyledSettings = [Family, FontColor]
-    Position.X = 32.000000000000000000
-    Position.Y = 464.000000000000000000
-    Size.Width = 88.000000000000000000
-    Size.Height = 25.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 14
-    Text = 'Back'
-    TextSettings.Font.Size = 16.000000000000000000
-    TextSettings.Font.StyleExt = {00060000000100000004000000}
-    OnClick = BackButtonClick
-  end
-  object ResetButton: TButton
-    Enabled = False
-    StyledSettings = [Family, FontColor]
-    Position.X = 240.000000000000000000
-    Position.Y = 464.000000000000000000
-    Size.Width = 89.000000000000000000
-    Size.Height = 25.000000000000000000
-    Size.PlatformDefault = False
-    TabOrder = 15
-    Text = 'Reset'
-    TextSettings.Font.Size = 16.000000000000000000
-    TextSettings.Font.StyleExt = {00060000000100000004000000}
-    OnClick = ResetButtonClick
-  end
-  object Card1Label: TLabel
-    StyledSettings = [FontColor]
-    Position.X = 64.000000000000000000
-    Position.Y = 408.000000000000000000
-    Size.Width = 105.000000000000000000
-    Size.Height = 17.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Family = 'Britannic'
-    TextSettings.Font.Size = 20.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    Text = 'Card 1:'
-    TabOrder = 12
-  end
-  object Card2Label: TLabel
-    StyledSettings = [FontColor]
-    Position.X = 208.000000000000000000
-    Position.Y = 408.000000000000000000
-    Size.Width = 97.000000000000000000
-    Size.Height = 17.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Family = 'Britannic'
-    TextSettings.Font.Size = 20.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    Text = 'Card 2:'
-    TabOrder = 13
-  end
-  object Status: TLabel
-    StyledSettings = []
-    Position.Y = 440.000000000000000000
-    Size.Width = 361.000000000000000000
-    Size.Height = 25.000000000000000000
-    Size.PlatformDefault = False
-    TextSettings.Font.Family = 'Britannic'
-    TextSettings.Font.Size = 20.000000000000000000
-    TextSettings.Font.StyleExt = {00070000000000000004000000}
-    TextSettings.FontColor = claDarkgreen
-    TextSettings.HorzAlign = Center
-    TabOrder = 11
+    Text = 'START'
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    OnClick = StartButtonClick
   end
   object StyleBook1: TStyleBook
     Styles = <
@@ -4147,7 +3951,7 @@ object GameForm: TGameForm
           6C6174666F726D44656661756C74080B5374796C654C6F6F6B75700610737069
           6E626F74746F6D627574746F6E085461624F72646572020000000000}
       end>
-    Left = 304
-    Top = 56
+    Left = 296
+    Top = 152
   end
 end
