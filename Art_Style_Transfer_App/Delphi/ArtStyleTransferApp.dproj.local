@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/07/22 19:41:48.523,=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/22 19:42:20.235,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\ArtStyleTransferApp.dproj=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/07/22 19:46:31.564,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Main.pas=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/22 19:46:31.564,C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Main.fmx=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2023/07/22 20:38:53.069,C:\Users\Shayan\OneDrive - Habib University\Desktop\New\Delphi\Main.pas=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Main.pas</Transaction>
+    <Transaction>2023/07/22 20:38:53.069,C:\Users\Shayan\OneDrive - Habib University\Desktop\New\Delphi\Main.fmx=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\Main.fmx</Transaction>
+    <Transaction>2023/07/22 20:38:54.220,C:\Users\Shayan\OneDrive - Habib University\Desktop\New\Delphi\ArtStyleTransferApp.dproj=C:\Users\Shayan\OneDrive - Habib University\Documents\Embarcadero\Studio\Projects\ArtStyleTransferApp.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
