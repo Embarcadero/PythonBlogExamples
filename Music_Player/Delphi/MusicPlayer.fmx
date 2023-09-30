@@ -1,1 +1,269 @@
-
+object MusicPlayerWindow: TMusicPlayerWindow
+  Left = 0
+  Top = 0
+  ActiveControl = now_playing_tab
+  Caption = 'Music Player'
+  ClientHeight = 634
+  ClientWidth = 357
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object top_rectangle: TRectangle
+    Align = Top
+    Fill.Kind = None
+    Size.Width = 357.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    object top_heading: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 35.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      Text = 'Music'
+      TabOrder = 0
+    end
+    object create_playlist: TButton
+      StyledSettings = [Size, Style, FontColor]
+      Position.X = 184.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Create Playlist'
+      TextSettings.Font.Family = 'Consolas'
+      OnClick = create_playlistClick
+    end
+  end
+  object tab_ctrl: TTabControl
+    Align = Client
+    Size.Width = 357.000000000000000000
+    Size.Height = 561.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      357s
+      512s
+      357s
+      512s)
+    object songs_tab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Font.Size = 22.000000000000000000
+      StyledSettings = [Family, Style, FontColor]
+      IsSelected = False
+      Size.Width = 83.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Songs'
+      ExplicitSize.cx = 177.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object audio_list_box: TListBox
+        Align = Client
+        Size.Width = 357.000000000000000000
+        Size.Height = 512.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = audio_list_boxChange
+        Viewport.Width = 353.000000000000000000
+        Viewport.Height = 508.000000000000000000
+      end
+    end
+    object now_playing_tab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      TextSettings.Font.Size = 22.000000000000000000
+      StyledSettings = [Family, Style, FontColor]
+      IsSelected = True
+      Size.Width = 145.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Now Playing'
+      ExplicitSize.cx = 178.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object audio_embedded_image: TImageControl
+        Position.X = 72.000000000000000000
+        Position.Y = 128.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 201.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object audio_track_bar: TTrackBar
+        CanParentFocus = True
+        Enabled = False
+        Orientation = Horizontal
+        Position.X = 56.000000000000000000
+        Position.Y = 367.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnChange = audio_track_barChange
+      end
+      object play_btn: TButton
+        Enabled = False
+        Position.X = 120.000000000000000000
+        Position.Y = 431.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'playtoolbutton'
+        TabOrder = 3
+        Text = 'play_btn'
+        OnClick = play_btnClick
+      end
+      object pause_btn: TButton
+        Enabled = False
+        Position.X = 168.000000000000000000
+        Position.Y = 431.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'pausetoolbutton'
+        TabOrder = 2
+        Text = 'play_btn'
+        OnClick = pause_btnClick
+      end
+      object stop_btn: TButton
+        Enabled = False
+        Position.X = 216.000000000000000000
+        Position.Y = 432.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'refreshtoolbuttonbordered'
+        TabOrder = 4
+        Text = 'Stop'
+        OnClick = stop_btnClick
+      end
+      object fwd_btn: TButton
+        StyledSettings = [Size, Style, FontColor]
+        Position.X = 280.000000000000000000
+        Position.Y = 399.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = '+10'
+        TextSettings.Font.Family = 'Consolas'
+        OnClick = fwd_btnClick
+      end
+      object bwd_btn: TButton
+        StyledSettings = [Size, Style, FontColor]
+        Position.X = 48.000000000000000000
+        Position.Y = 399.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = '-10'
+        TextSettings.Font.Family = 'Consolas'
+        OnClick = bwd_btnClick
+      end
+      object volume_track_bar: TTrackBar
+        CanParentFocus = True
+        Orientation = Horizontal
+        Position.X = 248.000000000000000000
+        Position.Y = 95.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        OnChange = volumeChange
+      end
+      object vol_label: TLabel
+        Position.X = 200.000000000000000000
+        Position.Y = 95.000000000000000000
+        Size.Width = 49.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Volume:'
+        TabOrder = 8
+      end
+      object location_label: TLabel
+        StyledSettings = [Size, Style, FontColor]
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Calisto MT'
+        Text = 'Location: '
+        TabOrder = 11
+      end
+      object current_time_label: TLabel
+        Position.X = 48.000000000000000000
+        Position.Y = 343.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = '--:--'
+        TabOrder = 13
+      end
+      object song_name_label: TLabel
+        StyledSettings = [Size, Style, FontColor]
+        Position.X = 16.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Calisto MT'
+        Text = 'Song Name:'
+        TabOrder = 10
+      end
+      object artist_label: TLabel
+        StyledSettings = [Size, Style, FontColor]
+        Position.X = 16.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 329.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'Calisto MT'
+        Text = 'Artist:'
+        TabOrder = 9
+      end
+      object duration_label: TLabel
+        Position.X = 288.000000000000000000
+        Position.Y = 343.000000000000000000
+        Size.Width = 33.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        Text = '--:--'
+        TabOrder = 12
+      end
+    end
+  end
+  object open_audio_dialog: TOpenDialog
+    Options = [ofHideReadOnly, ofAllowMultiSelect, ofEnableSizing]
+    Left = 312
+    Top = 336
+  end
+  object media_player: TMediaPlayer
+    Left = 312
+    Top = 392
+  end
+  object timer: TTimer
+    OnTimer = update_current_time
+    Left = 312
+    Top = 282
+  end
+end
