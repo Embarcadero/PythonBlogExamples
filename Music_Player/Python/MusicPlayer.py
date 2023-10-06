@@ -45,6 +45,7 @@ class MusicPlayerWindow(Form):
     def create_playlistClick(self, Sender):
         # Open a file dialog to select audio files and populate the playlist
         if self.open_audio_dialog.Execute():
+            self.audio_list_box.Clear()
             mp3_files_list = self.open_audio_dialog.Files.ToList()
             self.listbox_song_paths = []
             self.listbox_items = []
