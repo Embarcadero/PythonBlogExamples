@@ -85,7 +85,6 @@ class MusicPlayerWindow(Form):
             self.audio_embedded_image.Bitmap = None
 
         # Load and play the selected audio file
-        self.audio_track_bar.OnChange = self.audio_track_barChange
         self.media_player.FileName = mp3_file_path
         self.media_player.Play()
 
@@ -96,11 +95,6 @@ class MusicPlayerWindow(Form):
         # Enable playback control buttons
         self.pause_btn.Enabled = True
         self.stop_btn.Enabled = True
-
-    def audio_track_barChange(self, Sender):
-        # Handle changes in the audio trackbar
-        selected_position_seconds = self.audio_track_bar.Value
-        self.media_player.CurrentTime = int(selected_position_seconds * 10000000)
 
     def update_current_time(self, Sender):
         # Update the current playback time
