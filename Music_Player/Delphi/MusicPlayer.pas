@@ -37,7 +37,6 @@ type
     procedure create_playlistClick(Sender: TObject);
     procedure play_btnClick(Sender: TObject);
     procedure pause_btnClick(Sender: TObject);
-    procedure audio_track_barChange(Sender: TObject);
     procedure update_current_time(Sender: TObject);
     procedure audio_list_boxChange(Sender: TObject);
     procedure volumeChange(Sender: TObject);
@@ -60,11 +59,6 @@ implementation
 
 
 procedure TMusicPlayerWindow.audio_list_boxChange(Sender: TObject);
-begin
-//
-end;
-
-procedure TMusicPlayerWindow.audio_track_barChange(Sender: TObject);
 begin
 //
 end;

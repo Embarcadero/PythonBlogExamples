@@ -3,8 +3,8 @@ object MusicPlayerWindow: TMusicPlayerWindow
   Top = 0
   ActiveControl = now_playing_tab
   Caption = 'Music Player'
-  ClientHeight = 634
-  ClientWidth = 357
+  ClientHeight = 636
+  ClientWidth = 356
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
@@ -12,7 +12,7 @@ object MusicPlayerWindow: TMusicPlayerWindow
   object top_rectangle: TRectangle
     Align = Top
     Fill.Kind = None
-    Size.Width = 357.000000000000000000
+    Size.Width = 356.000000000000000000
     Size.Height = 73.000000000000000000
     Size.PlatformDefault = False
     object top_heading: TLabel
@@ -42,18 +42,18 @@ object MusicPlayerWindow: TMusicPlayerWindow
   end
   object tab_ctrl: TTabControl
     Align = Client
-    Size.Width = 357.000000000000000000
-    Size.Height = 561.000000000000000000
+    Size.Width = 356.000000000000000000
+    Size.Height = 563.000000000000000000
     Size.PlatformDefault = False
     TabHeight = 49.000000000000000000
     TabIndex = 1
     TabOrder = 1
     TabPosition = PlatformDefault
     Sizes = (
-      357s
-      512s
-      357s
-      512s)
+      356s
+      514s
+      356s
+      514s)
     object songs_tab: TTabItem
       CustomIcon = <
         item
@@ -71,8 +71,8 @@ object MusicPlayerWindow: TMusicPlayerWindow
       ExplicitSize.cy = 49.000000000000000000
       object audio_list_box: TListBox
         Align = Client
-        Size.Width = 357.000000000000000000
-        Size.Height = 512.000000000000000000
+        Size.Width = 356.000000000000000000
+        Size.Height = 514.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         DisableFocusEffect = True
@@ -80,8 +80,8 @@ object MusicPlayerWindow: TMusicPlayerWindow
         DefaultItemStyles.GroupHeaderStyle = ''
         DefaultItemStyles.GroupFooterStyle = ''
         OnChange = audio_list_boxChange
-        Viewport.Width = 353.000000000000000000
-        Viewport.Height = 508.000000000000000000
+        Viewport.Width = 352.000000000000000000
+        Viewport.Height = 510.000000000000000000
       end
     end
     object now_playing_tab: TTabItem
@@ -91,7 +91,7 @@ object MusicPlayerWindow: TMusicPlayerWindow
       TextSettings.Font.Size = 22.000000000000000000
       StyledSettings = [Family, Style, FontColor]
       IsSelected = True
-      Size.Width = 145.000000000000000000
+      Size.Width = 146.000000000000000000
       Size.Height = 49.000000000000000000
       Size.PlatformDefault = False
       StyleLookup = ''
@@ -117,7 +117,6 @@ object MusicPlayerWindow: TMusicPlayerWindow
         Size.Height = 19.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
-        OnChange = audio_track_barChange
       end
       object play_btn: TButton
         Enabled = False
